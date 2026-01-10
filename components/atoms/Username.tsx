@@ -14,7 +14,7 @@ const Username: React.FC<UsernameProps> = ({
 }) => {
   return (
     <div
-      className={`flex items-center gap-1 font-semibold text-sm ${className}`}
+      className={`flex items-center gap-1 font-medium text-sm ${className}`}
     >
       <span>{name}</span>
       {isVerified && <MdVerified color="#3897F0" />}

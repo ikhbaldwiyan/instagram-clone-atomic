@@ -23,7 +23,7 @@ const Avatar: React.FC<AvatarProps> = ({ src, size = 'md', hasStory, isLive }) =
         rounded-full 
         ${hasStory ? 'bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[2px]' : 'bg-gray-200'}
       `}>
-        <div className="bg-white rounded-full p-[2px] w-full h-full">
+        <div className="bg-white rounded-full p-0.5 w-full h-full">
           <img 
             src={src} 
             alt="User avatar" 

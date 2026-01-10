@@ -43,8 +43,8 @@ const Atoms: React.FC = () => {
       </div>
       <div className="flex items-center justify-between px-2 py-1 text-black">
         <div className="flex items-center">
-          <IconButton icon={<Heart size={25} strokeWidth={2} />} />
-          <IconButton icon={<MessageCircle size={24} strokeWidth={2} />} />
+          <IconButton counter={480} icon={<Heart size={25} strokeWidth={2} />} />
+          <IconButton counter={4} icon={<MessageCircle size={24} strokeWidth={2} />} />
           <IconButton icon={<Send size={24} strokeWidth={2} />} />
           <IconButton icon={<Bookmark size={24} strokeWidth={2} />} />
         </div>

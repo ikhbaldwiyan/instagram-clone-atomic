@@ -14,7 +14,7 @@ interface PostHeaderProps {
 const PostHeader: React.FC<PostHeaderProps> = ({ avatarUrl, username, location, isVerified }) => {
   return (
     <div className="flex items-center justify-between p-3">
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-2">
         <Avatar src={avatarUrl} size="sm" />
         <div className="flex flex-col">
           <Username name={username} isVerified={isVerified} />

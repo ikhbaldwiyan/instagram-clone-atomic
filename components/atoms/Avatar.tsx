@@ -27,7 +27,7 @@ const Avatar: React.FC<AvatarProps> = ({ src, size = 'md', hasStory, isLive }) =
           <img 
             src={src} 
             alt="User avatar" 
-            className="w-full h-full rounded-full object-cover" 
+            className="w-full h-full rounded-full object-cover cursor-pointer" 
           />
         </div>
       </div>

@@ -22,7 +22,7 @@ const IconButton: React.FC<IconButtonProps> = ({
     >
       {icon}
       {badge && badge > 0 && (
-        <span className="absolute top-1 right-1 bg-red-500 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full border-2 border-white">
+        <span className="absolute top-1 right-1 bg-red-500 text-white text-[10px] w-3 h-3 flex items-center justify-center rounded-full border-2 border-white">
           {badge}
         </span>
       )}

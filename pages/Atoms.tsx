@@ -25,6 +25,7 @@ const Atoms: React.FC = () => {
               src="https://res.cloudinary.com/dreday4jy/image/upload/v1768069662/Inner_Oval_3_p2qrso.png"
               hasStory={false}
               isLive={false}
+              isWatched={true}
             />
             <Username name="inzoid" isVerified={true} />
           </div>

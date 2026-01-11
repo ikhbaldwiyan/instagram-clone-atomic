@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import AtomsPage from "./pages/Atoms";
-import MoleculesPage from "./pages/Molecules";
+import AtomsPage from './pages/Atoms';
+import MoleculesPage from './pages/Molecules';
+import OrganismsPage from './pages/Organisms';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-      <div className="max-w-md mx-auto min-h-screen bg-white shadow-xl relative">
-        <Routes>
-          <Route path="/atoms" element={<AtomsPage />} />
-          <Route path="/molecules" element={<MoleculesPage />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/atoms" element={<AtomsPage />} />
+        <Route path="/molecules" element={<MoleculesPage />} />
+        <Route path="/organisms" element={<OrganismsPage />} />
+      </Routes>
     </BrowserRouter>
   );
 };

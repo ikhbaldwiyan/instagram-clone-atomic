@@ -3,10 +3,11 @@ import PostImage from '@/components/atoms/PostImage';
 import PostActions from '@/components/molecules/PostActions';
 import PostCaption from '@/components/molecules/PostCaption';
 import PostHeader from '@/components/molecules/PostHeader';
+import MainLayout from '@/components/templates/MainLayout';
 
 const Molecules: React.FC = () => {
   return (
-    <article className="bg-white flex flex-col gap-4 border-b border-gray-200">
+    <MainLayout>
       <PostHeader
         avatarUrl="https://res.cloudinary.com/dreday4jy/image/upload/v1768069662/Inner_Oval_3_p2qrso.png"
         username="inzoid"
@@ -22,7 +23,7 @@ const Molecules: React.FC = () => {
         likedByAvatar="https://picsum.photos/seed/friend/50/50"
         likedByUsername="friend_user"
       />
-    </article>
+    </MainLayout>
   );
 };
 

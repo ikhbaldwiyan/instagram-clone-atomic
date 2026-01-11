@@ -6,9 +6,10 @@ interface AvatarProps {
   size?: 'xs' | 'sm' | 'md' | 'lg';
   hasStory?: boolean;
   isLive?: boolean;
+  isWatched?: boolean;
 }
 
-const Avatar: React.FC<AvatarProps> = ({ src, size = 'md', hasStory, isLive }) => {
+const Avatar: React.FC<AvatarProps> = ({ src, size = 'md', hasStory, isLive, isWatched }) => {
   const sizeClasses = {
     xs: 'w-8 h-8',
     sm: 'w-10 h-10',
@@ -21,6 +22,7 @@ const Avatar: React.FC<AvatarProps> = ({ src, size = 'md', hasStory, isLive }) =
       <div className={`
         ${sizeClasses[size]} 
         rounded-full 
+        ${isWatched ? 'p-0.5' : ''}
         ${hasStory ? 'bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[2px]' : 'bg-gray-200'}
       `}>
         <div className="bg-white rounded-full p-0.5 w-full h-full">

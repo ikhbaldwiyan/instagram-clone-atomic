@@ -15,13 +15,14 @@ const Molecules: React.FC = () => {
         isVerified={true}
       />
       <PostImage src="http://www.listercarterhomes.com/wp-content/uploads/2013/11/dummy-image-square.jpg" />
-      <PostActions />
+      <PostActions likes={100} comments={10} shares={15} />
       <PostCaption
         username="inzoid"
         likes={100}
         caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
         likedByAvatar="https://picsum.photos/seed/friend/50/50"
         likedByUsername="friend_user"
+        timestamp="30 minutes ago"
       />
     </MainLayout>
   );

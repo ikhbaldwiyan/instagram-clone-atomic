@@ -19,6 +19,8 @@ export interface Post {
   location?: string;
   imageUrl: string;
   likes: number;
+  comments?: number;
+  shares?: number;
   caption: string;
   timestamp: string;
   carouselCount?: number;

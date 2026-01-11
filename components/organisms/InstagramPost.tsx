@@ -22,11 +22,16 @@ const InstagramPost: React.FC<InstagramPostProps> = ({ post }) => {
       <PostImage 
         src={post.imageUrl} 
       />
-      <PostActions />
+      <PostActions 
+        likes={post.likes} 
+        comments={post.comments || 0} 
+        shares={post.shares || 0} 
+      />
       <PostCaption 
         username={post.user.username} 
         likes={post.likes} 
         caption={post.caption}
+        timestamp={post.timestamp}
         likedByAvatar="https://picsum.photos/seed/friend/50/50"
         likedByUsername="friend_user"
       />

@@ -7,6 +7,7 @@ interface PostCaptionProps {
   caption: string;
   likedByAvatar?: string;
   likedByUsername?: string;
+  timestamp: string;
 }
 
 const PostCaption: React.FC<PostCaptionProps> = ({
@@ -15,6 +16,7 @@ const PostCaption: React.FC<PostCaptionProps> = ({
   caption,
   likedByAvatar,
   likedByUsername,
+  timestamp,
 }) => {
   return (
     <div className="px-4 pb-4 space-y-1">
@@ -30,6 +32,11 @@ const PostCaption: React.FC<PostCaptionProps> = ({
       <div className="text-sm leading-relaxed">
         <span className="font-semibold mr-2">{username}</span>
         <span>{caption}</span>
+      </div>
+      <div>
+       <span className="text-xs text-gray-500">
+         {timestamp}
+       </span>
       </div>
     </div>
   );

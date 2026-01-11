@@ -4,8 +4,8 @@ import { MOCK_POSTS } from '@/dummy';
 
 const Organisms = () => {
   return (
-    <MainLayout>
-      <InstagramPost post={MOCK_POSTS[0]} />
+    <MainLayout hideHeader>
+      <InstagramPost post={MOCK_POSTS[1]} />
     </MainLayout>
   );
 };

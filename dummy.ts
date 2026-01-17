@@ -1,4 +1,4 @@
-import { Post, Story } from './types';
+import { Post, Story, Profile, ProfileHighlight, ProfilePost } from './types';
 
 export const MOCK_STORIES: Story[] = [
   {
@@ -66,5 +66,100 @@ export const MOCK_TEMPLATE_POSTS: Post[] = [
     shares: 15,
     caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
     timestamp: 'September 19'
+  }
+];
+
+export const MOCK_PROFILE: Profile = {
+  id: 'profile_1',
+  user: {
+    id: 'ikhbal',
+    username: 'ikhbal.dwiyan',
+    avatarUrl: 'https://res.cloudinary.com/dreday4jy/image/upload/v1768069075/Inner_Oval_2_tvx48e.png',
+    isVerified: false
+  },
+  fullName: 'Ikhbal Dwiyantoro',
+  bio: 'Web Developer',
+  posts: 8,
+  followers: 268000,
+  following: 432,
+  isPrivate: true
+};
+
+export const MOCK_PROFILE_HIGHLIGHTS: ProfileHighlight[] = [
+  {
+    id: 'h1',
+    title: 'Friends',
+    coverImage: 'https://picsum.photos/seed/art/200/100'
+  },
+  {
+    id: 'h2',
+    title: 'Holiday',
+    coverImage: 'https://picsum.photos/seed/holiday/100/100'
+  },
+  {
+    id: 'h3',
+    title: 'Coding',
+    coverImage: 'https://picsum.photos/seed/design/100/100'
+  }
+];
+
+export const MOCK_PROFILE_POSTS: ProfilePost[] = [
+  {
+    id: 'pp1',
+    imageUrl: 'https://picsum.photos/seed/cars/400/400',
+    carouselCount: 1
+  },
+  {
+    id: 'pp2',
+    imageUrl: 'https://picsum.photos/seed/hills/400/400',
+    carouselCount: 1
+  },
+  {
+    id: 'pp4',
+    imageUrl: 'https://picsum.photos/seed/desk1/400/400',
+    carouselCount: 1
+  },
+  {
+    id: 'pp5',
+    imageUrl: 'https://picsum.photos/seed/skate/400/400',
+    carouselCount: 2
+  },
+  {
+    id: 'pp6',
+    imageUrl: 'https://picsum.photos/seed/art/400/400',
+    carouselCount: 1
+  },
+  {
+    id: 'pp7',
+    imageUrl: 'https://picsum.photos/seed/wallpaper/400/400',
+    carouselCount: 1
+  },
+  {
+    id: 'pp8',
+    imageUrl: 'https://picsum.photos/seed/tablet/400/400',
+    carouselCount: 1
+  },
+  {
+    id: 'pp9',
+    imageUrl: 'https://picsum.photos/seed/walking/400/400',
+    carouselCount: 1
+  }
+];
+
+export const MOCK_TAGGED_POSTS: ProfilePost[] = [
+  {
+    id: 'tp1',
+    imageUrl: 'https://picsum.photos/seed/tagged1/400/400',
+    carouselCount: 1
+  },
+  {
+    id: 'tp2',
+    imageUrl: 'https://picsum.photos/seed/tagged2/400/400',
+    carouselCount: 1
+  },
+  {
+    id: 'tp3',
+    imageUrl: 'https://picsum.photos/seed/tagged3/400/400',
+    carouselCount: 1
   }
 ];

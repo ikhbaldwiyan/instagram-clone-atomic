@@ -25,3 +25,26 @@ export interface Post {
   timestamp: string;
   carouselCount?: number;
 }
+
+export interface Profile {
+  id: string;
+  user: User;
+  fullName: string;
+  bio: string;
+  posts: number;
+  followers: number;
+  following: number;
+  isPrivate?: boolean;
+}
+
+export interface ProfileHighlight {
+  id: string;
+  title: string;
+  coverImage: string;
+}
+
+export interface ProfilePost {
+  id: string;
+  imageUrl: string;
+  carouselCount?: number;
+}

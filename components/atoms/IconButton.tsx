@@ -4,7 +4,7 @@ interface IconButtonProps {
   icon: React.ReactNode;
   onClick?: () => void;
   className?: string;
-  badge?: number;
+  badge?: boolean;
   counter?: number;
 }
 
@@ -21,8 +21,8 @@ const IconButton: React.FC<IconButtonProps> = ({
       className={`p-2 hover:bg-gray-100 flex gap-1 rounded-full transition-colors relative ${className}`}
     >
       {icon}
-      {badge && badge > 0 && (
-        <span className="absolute top-1 right-1 bg-red-500 text-white text-[10px] w-3 h-3 flex items-center justify-center rounded-full border-2 border-white">
+      {badge && (
+        <span className="absolute top-1.5 right-1 bg-red-500 text-white text-[10px] w-3 h-3 flex items-center justify-center rounded-full border-2 border-white">
           {badge}
         </span>
       )}

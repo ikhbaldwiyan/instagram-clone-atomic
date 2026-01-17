@@ -16,7 +16,7 @@ const StoriesBar: React.FC<StoriesBarProps> = ({ stories }) => {
           <div className="rounded-full">
              <Avatar src="https://res.cloudinary.com/dreday4jy/image/upload/v1768069075/Inner_Oval_2_tvx48e.png" />
           </div>
-          <div className="absolute bottom-1 right-1 bg-black text-white rounded-full p-0.5 border-2 border-white">
+          <div className="absolute bottom-1 right-0 bg-black text-white rounded-full p-0.5 border-2 border-white">
             <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M12 4v16m8-8H4" />
             </svg>

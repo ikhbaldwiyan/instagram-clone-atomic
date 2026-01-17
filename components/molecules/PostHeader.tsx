@@ -2,7 +2,7 @@
 import React from 'react';
 import Avatar from '../atoms/Avatar';
 import Username from '../atoms/Username';
-import { MoreHorizontal } from 'lucide-react';
+import { MoreVertical } from 'lucide-react';
 
 interface PostHeaderProps {
   avatarUrl: string;
@@ -22,7 +22,7 @@ const PostHeader: React.FC<PostHeaderProps> = ({ avatarUrl, username, location, 
         </div>
       </div>
       <button className="text-gray-600">
-        <MoreHorizontal size={20} />
+        <MoreVertical size={20} />
       </button>
     </div>
   );

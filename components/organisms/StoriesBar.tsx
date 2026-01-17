@@ -2,8 +2,8 @@
 import React from 'react';
 import Avatar from '../atoms/Avatar';
 import { Story } from '../../types';
-import { FaPlus } from "react-icons/fa";
 import { GoPlus } from "react-icons/go";
+import Username from "../atoms/Username";
 
 interface StoriesBarProps {
   stories: Story[];
@@ -12,7 +12,7 @@ interface StoriesBarProps {
 
 const StoriesBar: React.FC<StoriesBarProps> = ({ stories, isProfile }) => {
   return (
-    <div className="flex items-center gap-4 p-4 py-2 overflow-x-auto no-scrollbar bg-white border-b border-gray-100">
+    <div className="flex items-center gap-2 p-4 py-2 overflow-x-auto no-scrollbar bg-white border-b border-gray-100">
       {isProfile ? (
         <div className="flex flex-col items-center gap-1 shrink-0 cursor-pointer">
           <div className="w-14 h-14 rounded-full bg-white border border-black flex items-center justify-center">
@@ -44,9 +44,7 @@ const StoriesBar: React.FC<StoriesBarProps> = ({ stories, isProfile }) => {
             isLive={story.hasLive}
             isWatched={story.isWatched}
           />
-          <span className="text-[11px] font-normal text-gray-800 w-16 mt-1 truncate text-center">
-            {story.user.username}
-          </span>
+          <Username variant="story" name={story.user.username} />
         </div>
       ))}
     </div>

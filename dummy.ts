@@ -17,11 +17,11 @@ export const MOCK_STORIES: Story[] = [
   },
   {
     id: '4',
-    user: { id: 'u4', username: 'kieron_d', avatarUrl: 'https://picsum.photos/seed/lily/150/150' }
+    user: { id: 'u4', username: 'kieron_d', avatarUrl: 'https://picsum.photos/seed/coding/150/150' }
   },
   {
     id: '5',
-    user: { id: 'u5', username: 'craig_love', avatarUrl: 'https://picsum.photos/seed/urban/150/150' }
+    user: { id: 'u5', username: 'jhon_doe', avatarUrl: 'https://picsum.photos/seed/user/150/150' }
   },
 ];
 

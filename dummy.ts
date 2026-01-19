@@ -76,10 +76,10 @@ export const MOCK_POSTS: Post[] = [
     id: 'p2',
     user: {
       id: 'u11',
-      username: 'daily_dose_art',
+      username: 'mountain_gram',
       avatarUrl: 'https://picsum.photos/seed/art_user/100/100',
     },
-    location: 'Modern Art Museum',
+    location: 'Everest',
     imageUrl: 'https://picsum.photos/seed/art_post/1080/1080',
     likes: 400,
     caption:
@@ -97,11 +97,11 @@ export const MOCK_POSTS: Post[] = [
     id: 'p3',
     user: {
       id: 'u12',
-      username: 'jhon_doe',
+      username: 'andrew',
       avatarUrl: 'https://picsum.photos/seed/travel_user/100/100',
     },
     location: 'Bali, Indonesia',
-    imageUrl: 'https://picsum.photos/seed/bali/1080/1080',
+    imageUrl: 'https://picsum.photos/seed/burger/1080/1080',
     likes: 1250,
     caption: 'Sunset vibes in Bali 🌅 absolutely magical!',
     timestamp: '1 day ago',
@@ -116,7 +116,7 @@ export const MOCK_POSTS: Post[] = [
       avatarUrl: 'https://picsum.photos/seed/food_user/100/100',
     },
     location: 'New York, USA',
-    imageUrl: 'https://picsum.photos/seed/burger/1080/1080',
+    imageUrl: 'https://picsum.photos/seed/bali/1080/1080',
     likes: 890,
     caption: 'Best burger in town! 🍔🍟 #foodie #nyc',
     timestamp: '2 days ago',
@@ -162,17 +162,17 @@ export const MOCK_PROFILE_HIGHLIGHTS: ProfileHighlight[] = [
   {
     id: 'h1',
     title: 'Friends',
-    coverImage: 'https://picsum.photos/seed/art/200/100',
+    coverImage: 'https://images.pexels.com/photos/14975138/pexels-photo-14975138.jpeg?cs=srgb&dl=pexels-anna-411131748-14975138.jpg&fm=jpg',
   },
   {
     id: 'h2',
-    title: 'Holiday',
-    coverImage: 'https://picsum.photos/seed/holiday/100/100',
+    title: 'Coding',
+    coverImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnp5IsCb_R1WCSALDY08KF1RA-8IEqfrpNBA&s',
   },
   {
     id: 'h3',
-    title: 'Coding',
-    coverImage: 'https://picsum.photos/seed/design/100/100',
+    title: 'Holiday',
+    coverImage: 'https://picsum.photos/seed/holiday/100/100',
   },
 ];
 

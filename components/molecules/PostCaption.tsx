@@ -26,7 +26,7 @@ const PostCaption: React.FC<PostCaptionProps> = ({
           Liked by{' '}
           <span className="font-semibold">{likedByUsername || 'someone'}</span>{' '}
           and{' '}
-          <span className="font-semibold">{likes.toLocaleString()} others</span>
+          others
         </p>
       </div>
       <div className="text-sm leading-relaxed">
@@ -34,9 +34,9 @@ const PostCaption: React.FC<PostCaptionProps> = ({
         <span>{caption}</span>
       </div>
       <div>
-       <span className="text-xs text-gray-500">
-         {timestamp}
-       </span>
+        <span className="text-xs text-gray-500">
+          {timestamp}
+        </span>
       </div>
     </div>
   );

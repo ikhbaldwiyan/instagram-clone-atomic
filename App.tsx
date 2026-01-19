@@ -6,6 +6,7 @@ import HomePage from './pages/Home';
 import OrganismsPage from './pages/Organisms';
 import TemplatesPage from './pages/Templates';
 import ProfilePage from './pages/Profile';
+import DetailPost from "./pages/DetailPost";
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path="/organisms" element={<OrganismsPage />} />
         <Route path="/templates" element={<TemplatesPage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/detail" element={<DetailPost />} />
       </Routes>
     </BrowserRouter>
   );

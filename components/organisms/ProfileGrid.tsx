@@ -2,6 +2,7 @@ import React from 'react';
 import { ProfilePost } from '@/types';
 import { TbBoxMultiple } from "react-icons/tb";
 import PostImage from "../atoms/PostImage";
+import { Link } from "react-router-dom";
 
 interface ProfileGridProps {
   posts: ProfilePost[];
@@ -30,7 +31,8 @@ const ProfileGrid: React.FC<ProfileGridProps> = ({ posts }) => {
         }
 
         return (
-          <div
+          <Link
+            to="/detail"
             key={post.id}
             className="relative aspect-square bg-white cursor-pointer group overflow-hidden"
           >
@@ -45,7 +47,7 @@ const ProfileGrid: React.FC<ProfileGridProps> = ({ posts }) => {
               </div>
             )}
 
-          </div>
+          </Link>
         );
       })}
     </div>

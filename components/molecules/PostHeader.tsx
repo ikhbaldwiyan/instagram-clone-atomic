@@ -3,6 +3,7 @@ import React from 'react';
 import Avatar from '../atoms/Avatar';
 import Username from '../atoms/Username';
 import { MoreVertical } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 interface PostHeaderProps {
   avatarUrl: string;
@@ -13,7 +14,7 @@ interface PostHeaderProps {
 
 const PostHeader: React.FC<PostHeaderProps> = ({ avatarUrl, username, location, isVerified }) => {
   return (
-    <div className="flex items-center justify-between p-3">
+    <Link to="/profile" className="flex items-center justify-between p-3">
       <div className="flex items-center gap-2">
         <Avatar src={avatarUrl} size="sm" />
         <div className="flex flex-col">
@@ -24,7 +25,7 @@ const PostHeader: React.FC<PostHeaderProps> = ({ avatarUrl, username, location, 
       <button className="text-gray-600">
         <MoreVertical size={20} />
       </button>
-    </div>
+    </Link>
   );
 };
 

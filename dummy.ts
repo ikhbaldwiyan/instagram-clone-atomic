@@ -106,7 +106,7 @@ export const MOCK_PROFILE_HIGHLIGHTS: ProfileHighlight[] = [
 export const MOCK_PROFILE_POSTS: ProfilePost[] = [
   {
     id: 'pp1',
-    imageUrl: 'https://picsum.photos/seed/cars/400/400',
+    imageUrl: 'https://picsum.photos/seed/art_post/1080/1080',
     carouselCount: 1
   },
   {

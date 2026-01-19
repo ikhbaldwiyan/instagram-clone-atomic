@@ -20,17 +20,19 @@ const PostCaption: React.FC<PostCaptionProps> = ({
 }) => {
   return (
     <div className="px-4 pb-4 space-y-1">
-      <div className="flex items-center gap-2 text-sm">
-        {likedByAvatar && <Avatar src={likedByAvatar} size="xs" />}
-        <p>
-          Liked by{' '}
-          <span className="font-semibold">{likedByUsername || 'someone'}</span>{' '}
-          and{' '}
-          others
-        </p>
-      </div>
+      {(likedByUsername && likedByAvatar) && (
+        <div className="flex items-center gap-2 text-sm">
+          <Avatar src={likedByAvatar} size="xs" />
+          <p>
+            Liked by{' '}
+            <span className="font-semibold">{likedByUsername}</span>{' '}
+            and{' '}
+            others
+          </p>
+        </div>
+      )}
       <div className="text-sm leading-relaxed">
-        <span className="font-semibold mr-2">{username}</span>
+        <span className="font-semibold mr-1">{username}</span>
         <span>{caption}</span>
       </div>
       <div>

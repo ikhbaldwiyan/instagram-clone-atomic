@@ -36,7 +36,7 @@ const BottomNav: React.FC = () => {
           <div className="cursor-pointer">
             <Avatar
               src="https://res.cloudinary.com/dreday4jy/image/upload/v1768069075/Inner_Oval_2_tvx48e.png"
-              size="xs"
+              size="sm"
               isWatched={isProfile}
             />
           </div>

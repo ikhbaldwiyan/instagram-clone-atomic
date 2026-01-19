@@ -32,8 +32,8 @@ const InstagramPost: React.FC<InstagramPostProps> = ({ post }) => {
         likes={post.likes} 
         caption={post.caption}
         timestamp={post.timestamp}
-        likedByAvatar="https://picsum.photos/seed/friend/50/50"
-        likedByUsername="friend_user"
+        likedByAvatar={post.likedByFriend?.avatarUrl}
+        likedByUsername={post.likedByFriend?.username}
       />
     </article>
   );

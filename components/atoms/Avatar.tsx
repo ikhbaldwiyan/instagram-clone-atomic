@@ -11,8 +11,8 @@ interface AvatarProps {
 
 const Avatar: React.FC<AvatarProps> = ({ src, size = 'md', hasStory, isLive, isWatched }) => {
   const sizeClasses = {
-    xs: 'w-8 h-8',
-    sm: 'w-10 h-10',
+    xs: 'w-6 h-6',
+    sm: 'w-8 h-8',
     md: 'w-14 h-14',
     lg: 'w-20 h-20',
   };

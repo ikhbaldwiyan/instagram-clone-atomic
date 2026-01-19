@@ -24,6 +24,10 @@ export interface Post {
   caption: string;
   timestamp: string;
   carouselCount?: number;
+  likedByFriend?: {
+    username: string;
+    avatarUrl: string;
+  };
 }
 
 export interface Profile {

@@ -14,7 +14,7 @@ const Molecules: React.FC = () => {
         location="Bandung, Indonesia"
         isVerified={true}
       />
-      <PostImage src="http://www.listercarterhomes.com/wp-content/uploads/2013/11/dummy-image-square.jpg" />
+      <PostImage src="https://thelawgivers.com/wp-content/uploads/2016/04/dummy-post-square-1-300x300.jpg" />
       <PostActions likes={100} comments={10} shares={15} />
       <PostCaption
         username="inzoid"
